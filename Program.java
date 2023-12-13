@@ -6,6 +6,17 @@ package gitTerminal02;
 import java.util.Scanner;
 
 public class Program {
+	public static void main(String[] args) {
+
+                Scanner in = new Scanner(System.in);
+
+                System.out.println("Enter the radius in meters: ");
+                double radi = in.nextDouble();
+
+                in.close();
+
+        }
+
 	/**
 	 * Calculates the area of a circle
 	 * 
@@ -14,7 +25,7 @@ public class Program {
 	 */
 	public static double area(double radius) {
 
-		return Math.PI * Math.pow(radius, 2);
+		return 3,14 * Math.pow(radius, 2);
 	}
 
 	/**
@@ -25,7 +36,7 @@ public class Program {
 	 */
 	public static double perimeter(double radius) {
 
-		return (2 * Math.PI) * radius;
+		return (2 * 3,14) * radius;
 	}
 
 	/**
@@ -33,14 +44,7 @@ public class Program {
 	 * 
 	 * @param args not used.
 	 */
-	public static void main(String[] args) {
-
-		Scanner in = new Scanner(System.in);
-
-		System.out.println("Enter the radius in meters: ");
-		double radi = in.nextDouble();
-
-		in.close();
+	public static void print(String[] args) {
 
 		System.out.println("\nThe area is: " + area(radi));
 
